@@ -21,6 +21,7 @@ RUN \
  echo "deb https://dl.bintray.com/tvheadend/deb xenial stable-4.2" >> /etc/apt/sources.list && \
  echo "**** install packages ****" && \
  apt-get update && \
+ apt-get install -y apt-transport-https && \
  apt-get install -y \
 	tvheadedend \
 	wget && \
