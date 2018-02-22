@@ -27,7 +27,7 @@ apt-get install -y apt-transport-https && \
  echo "**** install tvheadend and wget****" && \
  #apt-add-repository ppa:mamarley/tvheadend-git-stable && \
  apt-get update && \
- apt-get install -y \
+ apt-get install -y --no-install-recommends \
 	tvheadend \
 	wget && \
 	
