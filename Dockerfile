@@ -17,20 +17,18 @@ RUN [ "cross-build-start" ]
 RUN \
 echo "**** install prerequisite packages ****" && \
 apt-get update && \
-apt-get install -y software-properties-common && \
+#apt-get install -y software-properties-common && \
+apt-get install -y apt-transport-https && \
 
-# apt-get update && \
-# apt-get install -y apt-transport-https && \
- 
 # echo "**** add tvheadendrepository ****" && \
-# apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 && \
-# echo "deb https://dl.bintray.com/tvheadend/deb xenial stable-4.2" >> /etc/apt/sources.list && \
+ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 379CE192D401AB61 && \
+ echo "deb https://dl.bintray.com/tvheadend/deb xenial stable-4.2" >> /etc/apt/sources.list && \
  
  echo "**** install tvheadend and wget****" && \
- apt-add-repository ppa:mamarley/tvheadend-git-stable && \
+ #apt-add-repository ppa:mamarley/tvheadend-git-stable && \
  apt-get update && \
  apt-get install -y \
-	tvheadedend \
+	tvheadend \
 	wget && \
 	
  echo "**** install Sundtek****" && \
