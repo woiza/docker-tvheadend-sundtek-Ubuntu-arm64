@@ -6,11 +6,19 @@ ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="sparklyballs"
 
-# package versions
-ARG UNIFI_VER="5.6.30"
-
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
+
+# adding qemu for crossbuilding on DockerHub
+#COPY --from=resin/aarch64-alpine:latest /usr/bin/qemu* /usr/bin/
+#COPY --from=resin/aarch64-alpine:latest /usr/bin/resin-xbuild* /usr/bin/
+#COPY --from=resin/aarch64-alpine:latest /usr/bin/cross-build* /usr/bin/
+
+COPY --from=resin/aarch64-alpine:latest ["/usr/bin/qemu*", "/usr/bin/resin-xbuild*", "/usr/bin/cross-build*",  "/usr/bin/"]
+
+RUN [ "cross-build-start" ]
+
+
 
 RUN \
  echo "**** add mongo repository ****" && \
@@ -35,6 +43,8 @@ RUN \
 	/tmp/* \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
+
+RUN [ "cross-build-end" ]
 
 # add local files
 COPY root/ /
