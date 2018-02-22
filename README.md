@@ -1,1 +1,1 @@
-Tvheadend - Sundtek - arm64
+Tvheadend - Sundtek - Xenial_arm64 
