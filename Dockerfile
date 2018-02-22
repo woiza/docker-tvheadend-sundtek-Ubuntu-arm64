@@ -15,7 +15,10 @@ COPY --from=resin/aarch64-alpine:latest ["/usr/bin/qemu*", "/usr/bin/resin-xbuil
 RUN [ "cross-build-start" ]
 
 RUN \
-# echo "**** install prerequisite packages ****" && \
+echo "**** install prerequisite packages ****" && \
+apt-get update && \
+apt-get install software-properties-common && \
+
 # apt-get update && \
 # apt-get install -y apt-transport-https && \
  
