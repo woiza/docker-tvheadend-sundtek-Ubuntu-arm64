@@ -17,7 +17,7 @@ RUN [ "cross-build-start" ]
 RUN \
 echo "**** install prerequisite packages ****" && \
 apt-get update && \
-apt-get install software-properties-common && \
+apt-get install -y software-properties-common && \
 
 # apt-get update && \
 # apt-get install -y apt-transport-https && \
