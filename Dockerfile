@@ -29,6 +29,7 @@ libavahi-client-dev \
 zlib1g-dev \
 libavcodec-dev \
 libavutil-dev \
+libavfilter-dev \
 libavformat-dev \
 libswscale-dev \
 libavresample-dev && \
@@ -50,8 +51,8 @@ cd /tmp/tvheadend && \
 	--disable-libvpx_static \
 	--disable-libx264_static \
 	--disable-libx265_static \
-	--disable-libav \
 	--enable-hdhomerun_client \
+	--enable-libav \
 	--enable-pngquant \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
