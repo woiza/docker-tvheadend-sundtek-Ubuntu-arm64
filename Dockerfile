@@ -29,8 +29,7 @@ wget \
 xmltv \
 libav-tools \
 libavahi-client-dev \
-zlib1g-dev \
-libav-tools && \
+zlib1g-dev && \
 #libavcodec-dev \
 #libavutil-dev \
 #libavfilter-dev \
