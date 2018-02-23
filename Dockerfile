@@ -35,6 +35,7 @@ cd /tmp/tvheadend && \
 	--disable-avahi \
 	--disable-bintray_cache \
 	--disable-dbus_1 \
+	--disable-libav \
 	--disable-ffmpeg_static \
 	--disable-hdhomerun_static \
 	--disable-libfdkaac_static \
