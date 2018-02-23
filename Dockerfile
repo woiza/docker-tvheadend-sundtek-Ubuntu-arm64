@@ -26,6 +26,8 @@ bzip2 \
 gettext \
 python \
 wget \
+xmltv \
+libav-tools \
 libavahi-client-dev \
 zlib1g-dev \
 libavcodec-dev \
