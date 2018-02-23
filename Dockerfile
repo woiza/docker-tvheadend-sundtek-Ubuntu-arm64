@@ -17,7 +17,7 @@ RUN [ "cross-build-start" ]
 RUN \
 echo "**** install prerequisite packages ****" && \
 apt-get update && \
-apt-get install -y \
+apt-get install -y --no-install-recommends \
 build-essential \
 git \
 pkg-config \
