@@ -43,7 +43,7 @@ cd /tmp/tvheadend && \
 	--disable-avahi \
 	--disable-bintray_cache \
 	--disable-dbus_1 \
-	--enable-ffmpeg_static \
+	--disable-ffmpeg_static \
 	--disable-hdhomerun_static \
 	--disable-libfdkaac_static \
 	--disable-libmfx_static \
@@ -53,7 +53,7 @@ cd /tmp/tvheadend && \
 	--disable-libx264_static \
 	--disable-libx265_static \
 	--enable-hdhomerun_client \
-	--enable-libav \
+	--disable-libav \
 	--enable-pngquant \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
