@@ -96,4 +96,5 @@ RUN [ "cross-build-end" ]
 COPY root/ /
 
 # Volumes and Ports
+EXPOSE 9981 9982
 VOLUME /config /recordings /picons
