@@ -19,7 +19,7 @@ echo "**** install prerequisite packages ****" && \
 apt-get update && \
 apt-get install -y \
 build-essential \
-libav-tools \
+libavcodec-dev \
 git \
 pkg-config \
 libssl-dev \
