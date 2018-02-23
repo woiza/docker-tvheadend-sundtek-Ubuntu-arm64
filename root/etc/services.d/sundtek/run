@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+cd /opt/bin || exit
+
+exec \
+	./mediaclient --start
