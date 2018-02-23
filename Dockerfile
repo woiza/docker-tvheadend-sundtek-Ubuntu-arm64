@@ -30,12 +30,13 @@ xmltv \
 libav-tools \
 libavahi-client-dev \
 zlib1g-dev \
-libavcodec-dev \
-libavutil-dev \
-libavfilter-dev \
-libavformat-dev \
-libswscale-dev \
-libavresample-dev && \
+libav-tools && \
+#libavcodec-dev \
+#libavutil-dev \
+#libavfilter-dev \
+#libavformat-dev \
+#libswscale-dev \
+#libavresample-dev && \
 
 
 echo "**** compile tvheadend ****" && \
@@ -55,7 +56,7 @@ cd /tmp/tvheadend && \
 	--disable-libx264_static \
 	--disable-libx265_static \
 	--disable-hdhomerun_client \
-	--disable-libav \
+	--enable-libav \
 	--enable-pngquant \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
