@@ -23,6 +23,7 @@ git \
 pkg-config \
 libssl-dev \
 bzip2 \
+gettext \
 wget \
 libavahi-client-dev \
 zlib1g-dev \
