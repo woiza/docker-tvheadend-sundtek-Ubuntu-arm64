@@ -24,6 +24,8 @@ git \
 pkg-config \
 libssl-dev \
 bzip2 \
+gettext \
+libgettextpo-dev \
 wget && \
 
 echo "**** compile tvheadend ****" && \
