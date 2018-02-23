@@ -19,7 +19,7 @@ echo "**** install prerequisite packages ****" && \
 apt-get update && \
 apt-get install -y \
 build-essential \
-wget \
+libav-tools \
 git \
 pkg-config \
 libssl-dev \
@@ -35,7 +35,6 @@ cd /tmp/tvheadend && \
 	--disable-avahi \
 	--disable-bintray_cache \
 	--disable-dbus_1 \
-	--disable-libav \
 	--disable-ffmpeg_static \
 	--disable-hdhomerun_static \
 	--disable-libfdkaac_static \
