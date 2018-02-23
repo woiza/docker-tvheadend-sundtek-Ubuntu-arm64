@@ -19,14 +19,19 @@ echo "**** install prerequisite packages ****" && \
 apt-get update && \
 apt-get install -y \
 build-essential \
-libavcodec-dev \
 git \
 pkg-config \
 libssl-dev \
 bzip2 \
-gettext \
-libgettextpo-dev \
-wget && \
+wget \
+libavahi-client-dev \
+zlib1g-dev \
+libavcodec-dev \
+libavutil-dev \
+libavformat-dev \
+libswscale-dev \
+libavresample-dev && \
+
 
 echo "**** compile tvheadend ****" && \
 git clone https://github.com/tvheadend/tvheadend.git /tmp/tvheadend && \
