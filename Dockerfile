@@ -24,6 +24,7 @@ pkg-config \
 libssl-dev \
 bzip2 \
 gettext \
+python \
 wget \
 libavahi-client-dev \
 zlib1g-dev \
@@ -42,7 +43,7 @@ cd /tmp/tvheadend && \
 	--disable-avahi \
 	--disable-bintray_cache \
 	--disable-dbus_1 \
-	--disable-ffmpeg_static \
+	--enable-ffmpeg_static \
 	--disable-hdhomerun_static \
 	--disable-libfdkaac_static \
 	--disable-libmfx_static \
@@ -52,7 +53,7 @@ cd /tmp/tvheadend && \
 	--disable-libx264_static \
 	--disable-libx265_static \
 	--enable-hdhomerun_client \
-	--disable-libav \
+	--enable-libav \
 	--enable-pngquant \
 	--infodir=/usr/share/info \
 	--localstatedir=/var \
