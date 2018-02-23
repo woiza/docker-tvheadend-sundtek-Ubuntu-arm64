@@ -52,7 +52,7 @@ cd /tmp/tvheadend && \
 	--disable-libvpx_static \
 	--disable-libx264_static \
 	--disable-libx265_static \
-	--enable-hdhomerun_client \
+	--disable-hdhomerun_client \
 	--disable-libav \
 	--enable-pngquant \
 	--infodir=/usr/share/info \
